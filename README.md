@@ -8,7 +8,7 @@ This code started with the code available at this tutorial, as of 2019-09-16, 5p
 * Code: <https://github.com/spring-guides/gs-spring-boot.git>
    * This repo contains only the content of the `complete` directory, moved to the top level
      so as to be more compatible with what is expected when you deploy to TravisCI or Heroku.
-
+* Documentation: [ORIGINAL_README.adoc](/ORIGINAL_README.adoc)
 
 # What can you do with this code?
 

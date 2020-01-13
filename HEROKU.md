@@ -1,6 +1,6 @@
 # Deploying to Heroku via connecting to Github
 
-See: <https://ucsb-cs56.github.io/f19/lab/lab02>
+See: <https://ucsb-cs56.github.io/w20/lab/lab02>
 
 #  Deploying to Heroku via the heroku-maven-plugin
 
@@ -27,14 +27,19 @@ following the instructions here: <https://devcenter.heroku.com/articles/deployin
 
 To use this plugin, you need a Heroku application; you can create a new one or use an existing one.
 
-You can do that with the Heroku CLI, if it is installed on your system, or you can do it in the Heroku web interface at this URL: <https://dashboard.heroku.com/new-app>.  Choose an app name, or leave it blank and one will be chosen for you.
+You can do that with the Heroku CLI, if it is installed on your
+system, or you can do it in the Heroku web interface at this URL:
+<https://dashboard.heroku.com/new-app>.  Choose an app name, or leave
+it blank and one will be chosen for you.
 
-Once you have created a new Heroku application, one thing you'll have a few things available to you is the 
-URL of the deployed app, e.g. `warm-falls-30932.herokuapp.com`
+Once you have created a new Heroku application, one thing you'll have
+a few things available to you is the URL of the deployed app,
+e.g. `warm-falls-30932.herokuapp.com`
 
 The name of the Heroku app in this case is `warm-falls-30932`.
 
-As part of configuring the plugin, you'll need to add this to the configuration like this:
+As part of configuring the plugin, you'll need to add this to the
+configuration like this:
 
 
 ```xml
@@ -51,7 +56,14 @@ As part of configuring the plugin, you'll need to add this to the configuration 
       </plugin>
 ```
 
-You also need to define the `processType`.  This can be a bit tricky, since it depends on exactly how the application is configured.  In the example below, `hello.Application` is the fully qualified name of the class in which the `main` method is defined, the one that has the `@SpringBootApplication` on it.   By fully qualified, we mean that we need the full package name in front of it.    By convention, that would typically start with `com.` or `edu.` but in this case, the code simply has `hello.` as the top level package name.
+You also need to define the `processType`.  This can be a bit tricky,
+since it depends on exactly how the application is configured.  In the
+example below, `hello.Application` is the fully qualified name of the
+class in which the `main` method is defined, the one that has the
+`@SpringBootApplication` on it.  By fully qualified, we mean that we
+need the full package name in front of it.  By convention, that would
+typically start with `com.` or `edu.` but in this case, the code
+simply has `hello.` as the top level package name.
 
 ```xml
       <plugin>
@@ -136,6 +148,8 @@ be precisely as specified here: `src/main/resources/application.properties` with
 server.port=${PORT:8080}
 ```
 
-This says: use the `$PORT` environnmet variable, but if it isn't defined, use `8080`.
+This says: use the `$PORT` environment variable, but if it isn't
+defined, use `8080`.
 
-The other way is to pass ` -Dserver.port=$PORT `in the `Procfile` or `<web>` element of the Maven Heroku task.
+The other way is to pass ` -Dserver.port=$PORT `in the `Procfile` or
+`<web>` element of the Maven Heroku task.

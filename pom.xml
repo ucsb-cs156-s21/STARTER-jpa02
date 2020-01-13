@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
-	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <!-- (0) <modelVersion/> -->
   <modelVersion>4.0.0</modelVersion>
-  
+
   <!-- (1) <parent/> -->
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -15,7 +14,7 @@
 
   <!-- (2) <groupId/> -->
   <groupId>edu.ucsb.cs56.w20</groupId>
-  
+
   <!-- (3) <artifactId/> -->
 
   <artifactId>lab02</artifactId>
@@ -80,25 +79,42 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
 
-     <!-- For mvn:package, the jar file is now executable -->
+      <!-- For mvn:package, the jar file is now executable -->
       <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-jar-plugin</artifactId>
-          <version>3.1.2</version>
-          <configuration>
-              <archive>
-                <manifest>
-                  <!-- full package name of class with the main you want to run -->
-                  <mainClass>${mainClass}</mainClass>
-                </manifest>
-              </archive>
-          </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.1.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <!-- full package name of class with the main you want to run -->
+              <mainClass>${mainClass}</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
       </plugin>
 
     </plugins>
   </build>
 
   <!-- (27) <reporting/> -->
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.9</version>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>index</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+      <!-- any further custom report here -->
+    </plugins>
+  </reporting>
   <!-- (28) <profiles/> -->
 
 </project>

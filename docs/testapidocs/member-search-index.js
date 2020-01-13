@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"hello","c":"HelloControllerTest","l":"getHello()"},{"p":"hello","c":"HelloControllerTest","l":"HelloControllerTest()","url":"%3Cinit%3E()"}]

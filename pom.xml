@@ -25,6 +25,9 @@
   <!-- (5) <packaging/> -->
   <!-- (6) <name/> -->
   <!-- (7) <description/> -->
+
+  <description>Lab02 for CS56, W20</description>
+
   <!-- (8) <url/> -->
   <!-- (9) <inceptionYear/> -->
   <!-- (10) <organization/> -->
@@ -38,6 +41,12 @@
   <!-- (18) <issueManagement/> -->
   <!-- (19) <ciManagement/> -->
   <!-- (20) <distributionManagement/> -->
+  <distributionManagement>
+    <site>
+      <id>website</id>
+      <url>file://${project.basedir}/docs/</url>
+    </site>
+  </distributionManagement>
   <!-- (21) <properties/> -->
 
   <properties>

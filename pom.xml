@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <!-- (0) <modelVersion/> -->
   <modelVersion>4.0.0</modelVersion>
@@ -13,11 +12,11 @@
   </parent>
 
   <!-- (2) <groupId/> -->
-  <groupId>edu.ucsb.cs56.w20</groupId>
+  <groupId>edu.ucsb.cs156.spring</groupId>
 
   <!-- (3) <artifactId/> -->
 
-  <artifactId>lab02</artifactId>
+  <artifactId>hello</artifactId>
 
   <!-- (4) <version/> -->
   <version>1.0.0</version>
@@ -26,7 +25,7 @@
   <!-- (6) <name/> -->
   <!-- (7) <description/> -->
 
-  <description>Lab02 for CS56, W20</description>
+  <description>Demonstration of Spring Boot (Hello World)</description>
 
   <!-- (8) <url/> -->
   <!-- (9) <inceptionYear/> -->
@@ -51,7 +50,7 @@
 
   <properties>
     <java.version>11</java.version>
-    <mainClass>hello.Application</mainClass>
+    <mainClass>edu.ucsb.cs156.spring.hello.Application</mainClass>
   </properties>
 
   <!-- (22) <dependencyManagement/> -->
@@ -86,9 +85,9 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-	<configuration>
-	  <mainClass>${mainClass}</mainClass>
-	</configuration>
+        <configuration>
+          <mainClass>${mainClass}</mainClass>
+        </configuration>
       </plugin>
 
       <!-- For mvn:package, the jar file is now executable -->
@@ -110,23 +109,6 @@
   </build>
 
   <!-- (27) <reporting/> -->
-  <reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>2.9</version>
-        <reportSets>
-          <reportSet>
-            <reports>
-              <report>index</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-      </plugin>
-      <!-- any further custom report here -->
-    </plugins>
-  </reporting>
   <!-- (28) <profiles/> -->
 
 </project>

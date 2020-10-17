@@ -40,12 +40,6 @@
   <!-- (18) <issueManagement/> -->
   <!-- (19) <ciManagement/> -->
   <!-- (20) <distributionManagement/> -->
-  <distributionManagement>
-    <site>
-      <id>website</id>
-      <url>file://${project.basedir}/docs/</url>
-    </site>
-  </distributionManagement>
   <!-- (21) <properties/> -->
 
   <properties>

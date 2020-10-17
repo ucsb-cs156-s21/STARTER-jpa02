@@ -53,6 +53,8 @@ below.
   * Ensuring that the `PORT` environment variable is
     used to define the port on which Spring Boot starts the web server 
   * Providing a `Procfile` for deployment on Heroku
+  * Added a `system.properties` file in the main directory
+    which specifies the Java version for Heroku.
 * Testing and CI
   * Adding JUnit tests
   * Adding jacoco as a plugin to measure test 

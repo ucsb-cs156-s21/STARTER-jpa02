@@ -8,7 +8,7 @@
 * TODO: Correct the links to repo below, 
   then delete this TODO.  Replace it with 
   a link to your repo, e.g. 
-  https://ucsb-cs156-f20/jpa02-cgaucho
+  https://github.com/ucsb-cs156-f20/jpa02-cgaucho
 
 Repo: https://ucsb-cs156-f20/STARTER-jpa02
 
@@ -19,6 +19,13 @@ Repo: https://ucsb-cs156-f20/STARTER-jpa02
 
 
 On Heroku: https://cs156-f20-jpa02-cgaucho.herokuapp.com
+
+* TODO: Correct the links to codecov report below
+  then delete this TODO.  Replace it with 
+  a link to your codecov report.
+
+On Codecov: https://codecov.io/gh/ucsb-cs156-f20/jpa02-cgaucho
+
 
 # About this repo
 

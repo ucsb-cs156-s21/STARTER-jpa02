@@ -12,6 +12,14 @@
 
 Repo: https://ucsb-cs156-f20/STARTER-jpa02
 
+* TODO: Correct the links to app on Heroku below, 
+  then delete this TODO.  Replace it with 
+  a link to your running app on Heroku, e.g.
+  https://cs156-f20-jpa02-cgaucho.herokuapp.com
+
+
+On Heroku: https://cs156-f20-jpa02-cgaucho.herokuapp.com
+
 # About this repo
 
 This is a minimal "Hello World" type webapp built with Spring Boot.

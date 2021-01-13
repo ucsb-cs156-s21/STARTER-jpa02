@@ -8,15 +8,18 @@ To deploy this application to Heroku:
 
 2. Login to your Heroku account and navigate to the Heroku Dashboard.
 
-   Create a new Heroku Application with the name `jpa02-yourGitHubId`, substituting
-   your GitHub id in place of `yourGitHubId`.
+   Create a new Heroku Application with the name `jpa02-cgaucho`, substituting
+   your UCSB email address (without the `@ucsb.edu`) part in place of `cgaucho`.
 
    Example: `jpa02-cgaucho`
 
-   If you find that your GitHub id is too long, or the application name is already taken,
-   then modify your application name as needed.  (You'll be letting us know where your
-   application is deployed so that we can check.)
-
+   Note that the autograder for this assignment *assumes that you will use exactly this name* for your Heroku application.
+   
+   So, if you find that you cannot  GitHub id is too long, or the application name is already taken, for now,
+   modify your application name as needed, and then make a post on the `#help-jpa02`
+   channel on the course Slack.  We will have to put special case code in the autograder
+   to account for this, or else just check that part of your grade manually.
+   
 3. Ensure that your repo contains a `Procfile` with appropriate contents, as explained below.
 
    A `Procfile` is a file simply called `Procfile` (exactly with that

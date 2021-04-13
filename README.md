@@ -1,4 +1,4 @@
-# STARTER-jpa02
+# lab02-mpbonham
 
 * TODO: Change the title of this README 
   in the text `# STARTER-jpa02` above
